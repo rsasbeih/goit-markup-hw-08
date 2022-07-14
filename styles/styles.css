@@ -12,20 +12,23 @@ ul {
 li {
   list-style: none;
 }
+header {
+  padding: 20px 0;
+  border-bottom: 1px solid #ececec;
+}
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 1200px;
-  margin: 0 auto;
   padding: 0px;
+  margin: 0 auto;
 }
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 500px;
-  margin: 20px;
 }
 
 .nav-links-list {
@@ -38,7 +41,9 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 300px;
+}
+.nav-info li:last-child {
+  margin-left: 15px;
 }
 .nav-logo-text {
   color: #2196f3;
@@ -47,8 +52,17 @@ nav {
   font-weight: 700;
 }
 
+.nav-logo-text-bottom {
+  color: #2196f3;
+  font-family: "Raleway";
+  font-size: 24px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 10px;
+}
+
 .nav-text {
-  color: black;
+  color: #212121;
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
@@ -58,17 +72,29 @@ nav {
   color: #2196f3;
 }
 
+.nav-text-info {
+  color: #757575;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+.nav-text-info:hover,
+.nav-text-info:focus {
+  color: #2196f3;
+}
+
 .top-container {
-  width: 100%;
   background-color: #2f303a;
+  padding: 200px 0;
 }
 .top-container-content {
-  position: relative;
   text-align: center;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .top-container-text {
-  margin-top: 0;
-  padding-top: 200px;
+  margin: 0 0 30px 0;
   color: white;
   font-family: "Roboto";
   font-style: normal;
@@ -77,24 +103,31 @@ nav {
   line-height: 60px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding-bottom: 32px;
-  height: 127.2px;
 }
 .top-container-button {
   background-color: #2196f3;
-  width: 200px;
-  height: 50px;
+  padding: 10px 20px;
   color: white;
   border: none;
   border-radius: 4px;
-  margin-bottom: 200px;
+  cursor: pointer;
+  font-family: "Roboto";
+  font-weight: 700;
 }
-
+.top-container-button:hover {
+  background-color: #188ce8;
+}
+.content-container-section {
+  padding: 94px 0;
+}
 .content-container {
+  width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content-container ul {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: auto;
 }
 .content-text-container {
   margin: 0 15px;
@@ -116,61 +149,106 @@ nav {
   letter-spacing: 0.03em;
   font-family: "Roboto";
 }
+.wwd-section {
+  padding-bottom: 94px;
+}
+.wwd-section-content {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
 .wwd-title {
   font-size: 36px;
   font-weight: 700;
   line-height: 42px;
   text-align: center;
-  margin-top: 0;
+  margin: 0 0 50px 0;
 }
 .wwd-container {
   display: flex;
-  justify-content: center;
 }
-.wwd-img {
-  padding-right: 30px;
+.wwd-container li:not(:last-child) {
+  margin-right: 30px;
 }
+
 .our-team-container {
-  width: 100%;
-  height: 648px;
-  margin-top: 94px;
   padding-top: 94px;
+  padding-bottom: 94px;
   background-color: #f5f4fa;
+}
+.our-team-content {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
 }
 .our-team-content-container {
   display: flex;
   justify-content: center;
+}
+.our-team-content-container li:not(:last-child) {
+  margin-right: 30px;
 }
 .our-team-card {
   background-color: white;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0, 1, 1, rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  margin-right: 30px;
+}
+.our-team-img {
+  margin-bottom: 30px;
 }
 .our-team-name {
   text-align: center;
   color: #212121;
   font-weight: 500;
+  margin: 0 0 10px 0;
 }
 .our-team-title {
   text-align: center;
   color: #757575;
+  margin: 0 0 30px 0;
 }
-
-.footer-address {
-  color: #ffffff;
+.footer-section {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-list {
   font-style: normal;
+}
+.footer-list li:not(:last-child) {
+  margin-bottom: 5px;
+}
+.footer-address {
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+}
+.footer-address:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer-address:focus {
+  color: white;
 }
 .footer-email {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  font-style: normal;
+}
+.footer-email:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer-email:focus {
+  color: white;
 }
 .footer-email-and-phone {
   color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
+}
+.footer-email-and-phone:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer-email-and-phone:focus {
+  color: white;
 }
 .product-card-container {
   width: 370px;
@@ -192,47 +270,66 @@ nav {
 .product-text-container {
   padding: 20px 24px;
 }
-.product-buttons {
-  background-color: #f5f4fa;
-  padding: 6px 26px;
-  border: none;
-  height: 38px;
-  border-radius: 4px;
+.product-section {
+  padding: 94px 0;
 }
-.product-buttons-list {
+.button-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  padding-bottom: 30px;
+}
+.button-list li:not(:last-child) {
+  margin-right: 10px;
+}
+.product-buttons {
+  background-color: #f5f4fa;
+  font-family: "Roboto";
+  font-weight: 500px;
+  font-size: 16px;
+  padding: 6px 26px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.product-buttons-list {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 .active-product-button {
   background-color: #2196f3;
   color: white;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .projects {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 50px;
+  margin-bottom: 50px;
+}
+.project-content {
+  padding: 20px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .project-card {
-  border: #eeeeee;
   margin-bottom: 30px;
   cursor: pointer;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .project-name {
   font-size: 18px;
   font-weight: 700;
-  margin-left: 5px;
+  margin: 0 0 10px 0;
 }
 
 .project-description {
-  font-size: 16ppx;
+  font-size: 16px;
   color: #757575;
-  margin-left: 5px;
+  margin: 0;
 }
 
 .icon-container {
@@ -267,5 +364,8 @@ img {
 }
 
 .footer-content {
-  margin-left: 70px;
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px;
 }
