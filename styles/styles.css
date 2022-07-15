@@ -41,15 +41,18 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 500px;
 }
 
 .nav-links-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
 }
+.nav-links-list li {
+  margin-right: 50px;
+  flex-basis: calc(100% / 3 - 30px);
+}
+
 .nav-info {
   display: flex;
   justify-content: space-between;
@@ -63,6 +66,7 @@ nav {
   font-family: "Raleway";
   font-size: 24px;
   font-weight: 700;
+  margin-right: 100px;
 }
 
 .nav-logo-text-bottom {
@@ -216,7 +220,8 @@ nav {
 }
 .our-team-name {
   text-align: center;
-  color: var(--whitish);
+  color: var(--blackish);
+  font-size: 16px;
   font-weight: 500;
   margin: 0 0 10px 0;
 }
