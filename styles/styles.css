@@ -75,7 +75,7 @@ nav {
 }
 
 .nav-text {
-  color: var(--whitish);
+  color: var(--blackish);
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
