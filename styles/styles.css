@@ -45,18 +45,13 @@ nav {
 
 .nav-links-list {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
-.nav-links-list li {
+.nav-links-list li:not(:last-child) {
   margin-right: 50px;
-  flex-basis: calc(100% / 3 - 30px);
 }
 
 .nav-info {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 .nav-info li:last-child {
   margin-left: 15px;
