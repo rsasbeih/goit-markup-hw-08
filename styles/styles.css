@@ -486,6 +486,11 @@ img {
   background: var(--blue);
   cursor: pointer;
 }
+.circle svg {
+  fill: var(--white);
+  height: 20px;
+  width: 20px;
+}
 .our-team-social {
   display: flex;
   justify-content: space-around;
