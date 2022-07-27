@@ -503,7 +503,7 @@ img {
   border-radius: 50%;
   padding: 12px 12px;
 }
-.our-team-social-circle img {
+.our-team-social-circle svg {
   filter: invert(50%) sepia(9%) saturate(165%) hue-rotate(189deg)
     brightness(98%) contrast(88%);
 }
@@ -511,7 +511,7 @@ img {
   background: var(--blue);
   cursor: pointer;
 }
-.our-team-social-circle:hover img {
+.our-team-social-circle:hover svg {
   filter: brightness(0) saturate(100%) invert(94%) sepia(94%) saturate(0%)
     hue-rotate(108deg) brightness(103%) contrast(104%);
   cursor: pointer;
