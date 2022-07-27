@@ -146,7 +146,7 @@ nav {
   filter: invert(50%) sepia(14%) saturate(4026%) hue-rotate(175deg)
     brightness(97%) contrast(96%);
 }
-.envelope .smartphone{
+.nav-text-info svg{
   width: 16px;
   height: 16px;
 }
