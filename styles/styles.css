@@ -146,9 +146,10 @@ nav {
   filter: invert(50%) sepia(14%) saturate(4026%) hue-rotate(175deg)
     brightness(97%) contrast(96%);
 }
-.nav-text-info svg{
+.nav-text-info svg {
   width: 16px;
   height: 16px;
+  margin-right: 10px;
 }
 .top-container {
   background-image: url("../images/Img.png");
@@ -261,8 +262,7 @@ nav {
   display: flex;
   justify-content: center;
 }
-.our-team-content-container li {
-  margin-right: 30px;
+.our-team-content-container .our-team-card {
   flex-basis: calc(100% / 4 - 30px);
 }
 .our-team-content-container li:not(:last-child) {
@@ -491,8 +491,6 @@ img {
 }
 .circle svg {
   fill: var(--white);
-  height: 20px;
-  width: 20px;
 }
 .our-team-social {
   display: flex;
@@ -501,18 +499,9 @@ img {
   padding-right: 10px;
   margin-bottom: 30px;
 }
-.our-team-social .our-team-social-circle:not(:last-child) {
-  margin-right: 22px;
-}
-.our-team-social-circle {
-  background: var(--white);
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  padding: 12px 12px;
-}
-.our-team-social-circle svg {
-  fill: var(--icon-gray);
+
+.our-team-social-circle a svg {
+  fill: currentColor;
   width: 20px;
   height: 20px;
 }
@@ -520,9 +509,24 @@ img {
   background: var(--blue);
   cursor: pointer;
 }
-.our-team-social-circle:hover svg {
+.our-team-social-circle:hover a svg {
   cursor: pointer;
   fill: var(--white);
+}
+.team-social-link {
+  text-decoration: none;
+  background-color: var(--white);
+  border-radius: 100%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--icon-gray);
+}
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: var(--blue);
 }
 .content-img-container {
   margin-bottom: 30px;
