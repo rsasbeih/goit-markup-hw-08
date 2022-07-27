@@ -146,6 +146,14 @@ nav {
   filter: invert(50%) sepia(14%) saturate(4026%) hue-rotate(175deg)
     brightness(97%) contrast(96%);
 }
+.envelope {
+  width: 16px;
+  height: 16px;
+}
+.smartphone {
+  width: 10px;
+  height: 10px;
+}
 
 .top-container {
   background-image: url("../images/Img.png");
