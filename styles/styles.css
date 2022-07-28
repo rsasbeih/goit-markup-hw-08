@@ -293,6 +293,9 @@ nav {
   color: var(--dark-gray);
   margin: 0 0 16px 0;
 }
+.our-team-social-item:not(:last-child) {
+  margin-right: 10px;
+}
 .footer-section {
   background-color: var(--dark-blue);
   padding-top: 60px;
