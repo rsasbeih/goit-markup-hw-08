@@ -467,7 +467,6 @@ img {
   text-transform: uppercase;
   color: var(--white);
   margin: 10px 0;
-  padding-bottom: 20px;
   display: block;
 }
 .social-content {
@@ -483,6 +482,8 @@ img {
   color: var(--white);
 }
 .circle {
+  display: flex;
+  justify-content: center;
   background: var(--grayish);
   width: 44px;
   height: 44px;
