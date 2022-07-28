@@ -499,14 +499,7 @@ img {
   padding-right: 10px;
   margin-bottom: 30px;
 }
-.our-team-social-circle:hover {
-  background: var(--blue);
-  cursor: pointer;
-}
-.our-team-social-circle:hover a svg {
-  cursor: pointer;
-  fill: var(--white);
-}
+
 .team-social-link {
   text-decoration: none;
   background-color: var(--white);
@@ -518,14 +511,12 @@ img {
   justify-content: center;
   color: var(--icon-gray);
 }
-.team-social-link svg {
-  fill: currentColor;
-  width: 20px;
-  height: 20px;
-}
 .team-social-link:hover,
 .team-social-link:focus {
   background-color: var(--blue);
+}
+.team-social-link svg {
+  fill: currentColor;
 }
 .content-img-container {
   margin-bottom: 30px;
