@@ -499,12 +499,6 @@ img {
   padding-right: 10px;
   margin-bottom: 30px;
 }
-
-.team-social-link svg {
-  fill: currentColor;
-  width: 20px;
-  height: 20px;
-}
 .our-team-social-circle:hover {
   background: var(--blue);
   cursor: pointer;
@@ -523,6 +517,11 @@ img {
   align-items: center;
   justify-content: center;
   color: var(--icon-gray);
+}
+.team-social-link svg {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
 }
 .team-social-link:hover,
 .team-social-link:focus {
