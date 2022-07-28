@@ -467,6 +467,7 @@ img {
   text-transform: uppercase;
   color: var(--white);
   margin: 10px 0;
+  padding-bottom: 20px;
   display: block;
 }
 .social-content {
@@ -485,11 +486,12 @@ img {
   background: var(--grayish);
   width: 44px;
   height: 44px;
-  border-radius: 50%;
+  border-radius: 100%;
   padding: 12px 12px;
   margin-right: 10px;
 }
-.circle:hover {
+.circle:hover,
+.circle:focus {
   background: var(--blue);
   cursor: pointer;
 }
