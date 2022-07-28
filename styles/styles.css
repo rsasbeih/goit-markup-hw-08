@@ -68,7 +68,7 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 1200px;
-  padding: 0px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 nav {
@@ -262,9 +262,7 @@ nav {
   display: flex;
   justify-content: center;
 }
-.our-team-content-container .our-team-card {
-  flex-basis: calc(100% / 4 - 30px);
-}
+
 .our-team-content-container .our-team-card:not(:last-child) {
   margin-right: 30px;
 }
@@ -492,6 +490,8 @@ img {
   height: 44px;
   border-radius: 100%;
   padding: 12px 12px;
+}
+ .footer-social-item:not(:last-child) {
   margin-right: 10px;
 }
 .circle:hover,
