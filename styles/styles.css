@@ -491,7 +491,7 @@ img {
   border-radius: 100%;
   padding: 12px 12px;
 }
- .footer-social-item:not(:last-child) {
+.footer-social-item:not(:last-child) {
   margin-right: 10px;
 }
 .circle:hover,
@@ -538,4 +538,24 @@ img {
 .content-img-container svg {
   width: 70px;
   height: 70px;
+}
+.backdrop {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.2);
+  position: fixed;
+}
+.modal {
+  position: fixed;
+  width: 528px;
+  height: 581px;
+  left: 389px;
+  top: 14px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.is-hidden {
+  visibility: hidden;
 }

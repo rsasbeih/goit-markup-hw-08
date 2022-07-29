@@ -8,6 +8,11 @@
 </head>
 
 <body>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+         <p style="float: right;" data-modal-close>X</p>
+        </div>
+    </div>
     <header>
         <div class="nav-container">
             <nav>
@@ -47,7 +52,7 @@
         <section class="top-container">
             <div class="top-container-content">
                 <h1 class="top-container-text">EFFECTIVE SOLUTIONS FOR <br> YOUR BUSINESS</h1>
-                <button class="top-container-button" type="button">Request Our Service</button>
+                <button class="top-container-button" type="button" data-modal-open>Request Our Service</button>
             </div>
         </section>
         <section class="content-container-section">
@@ -132,7 +137,7 @@
                             </svg>
                                 </a>
                             </li>
-                            <li  class="our-team-social-item">
+                            <li class="our-team-social-item">
                                 <a href="/" class="team-social-link">
                                     <svg width="20px" height="20px">
                             <use href="./images/icons/icons.svg#twitter"></use>
@@ -295,14 +300,14 @@
                 <p class="social-text">Find us on</p>
                 <ul class="social-content-container">
                     <li class="footer-social-item">
-                        <a href="/"  class="circle">
+                        <a href="/" class="circle">
                             <svg height="20px" width="20px">
                             <use href="./images/icons/icons.svg#instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="footer-social-item">
-                        <a href="/"  class="circle">
+                        <a href="/" class="circle">
                             <svg height="20px" width="20px">
                             <use href="./images/icons/icons.svg#twitter"></use>
                             </svg>
@@ -317,7 +322,7 @@
                     </li>
                     <li class="footer-social-item">
                         <a href="/" class="circle">
-                            <svg  height="20px" width="20px">
+                            <svg height="20px" width="20px">
                             <use href="./images/icons/icons.svg#linkedin-1"></use>
                             </svg>
                         </a>
@@ -326,6 +331,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
