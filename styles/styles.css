@@ -559,3 +559,29 @@ img {
 .is-hidden {
   visibility: hidden;
 }
+.customer-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.customer-section-content {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+.customer-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  text-align: center;
+  margin: 0 0 50px 0;
+}
+.customer-container {
+  display: flex;
+}
+.customer-container li {
+  flex-basis: calc(100% / 3 - 30px);
+}
+.customer-container li:not(:last-child) {
+  margin-right: 30px;
+}
