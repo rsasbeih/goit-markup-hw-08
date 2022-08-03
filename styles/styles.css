@@ -605,3 +605,21 @@ img {
 .customer-logo svg {
   fill: currentColor;
 }
+.modal-button {
+  float: right;
+  display: flex;
+  justify-content: center;
+  background: var(--grayish);
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  padding: 12px 12px;
+}
+.modal-button:hover,
+.modal-button:focus {
+  background: var(--blue);
+  cursor: pointer;
+}
+.modal-button svg {
+  fill: var(--white);
+}
