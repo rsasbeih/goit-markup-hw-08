@@ -585,3 +585,23 @@ img {
 .customer-container li:not(:last-child) {
   margin-right: 30px;
 }
+.customer-logo {
+  text-decoration: none;
+  background-color: var(--white);
+  border: 1px solid var(--icon-gray);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--icon-gray);
+}
+.customer-logo:hover,
+.customer-logo:focus {
+  background-color: var(--blue);
+  color: var(--white);
+}
+.customer-logo svg {
+  fill: currentColor;
+}
