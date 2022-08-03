@@ -544,13 +544,13 @@ img {
   width: 100vw;
   background: rgba(0, 0, 0, 0.2);
   position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .modal {
-  position: fixed;
   width: 528px;
   height: 581px;
-  left: 389px;
-  top: 14px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
