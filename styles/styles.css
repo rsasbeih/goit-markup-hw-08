@@ -13,6 +13,7 @@
   --grayish: rgba(255, 255, 255, 0.1);
   --blackish: #212121;
   --icon-gray: #afb1b8;
+  --black: #000000;
 }
 h1,
 h2,
@@ -609,11 +610,11 @@ img {
   float: right;
   display: flex;
   justify-content: center;
-  background: var(--grayish);
+  background: var(--white);
   width: 44px;
   height: 44px;
   border-radius: 100%;
-  padding: 12px 12px;
+  border: 1px solid var(--grayish);
 }
 .modal-button:hover,
 .modal-button:focus {
@@ -621,5 +622,5 @@ img {
   cursor: pointer;
 }
 .modal-button svg {
-  fill: var(--white);
+  fill: var(--black);
 }
