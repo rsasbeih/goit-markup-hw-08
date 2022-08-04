@@ -15,6 +15,8 @@
   --icon-gray: #afb1b8;
   --black: #000000;
   --button-gray: rgba(0, 0, 0, 0.1);
+  --wwd-text-color: rgba(47, 48, 58, 0.8);
+  --card-overlay-color: rgba(33, 150, 243, 0.9);
 }
 h1,
 h2,
@@ -248,7 +250,27 @@ nav {
 .wwd-container li:not(:last-child) {
   margin-right: 30px;
 }
-
+.wwd-text-box {
+  background: var(--wwd-text-color);
+  position: relative;
+  top: 50%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  top: -19%;
+}
+.wwd-text {
+  color: var(--white);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
 .our-team-container {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -404,6 +426,7 @@ nav {
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc(100% / 3 - 30px);
+  height: 404px;
 }
 .project-card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -622,9 +645,39 @@ img {
 }
 .modal-button:hover,
 .modal-button:focus {
-  background: var(--white);
+  background: var(--blue);
   cursor: pointer;
 }
 .modal-button svg {
   fill: var(--black);
+}
+.project-card-overlay {
+  position: relative;
+  top: 50%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0px;
+  top: -95%;
+  background: var(--card-overlay-color);
+  transition-property: height;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
+  font-size: 0;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.project-card:hover .project-card-overlay {
+  height: 294px;
+  font-size: 18px;
+}
+.project-card-overlay-text{
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0.03em;
+color: var(--white);
+
 }
