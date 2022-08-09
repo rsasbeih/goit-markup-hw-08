@@ -127,6 +127,9 @@ nav {
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
+  transition: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-text:hover,
 .nav-text:focus {
@@ -140,19 +143,17 @@ nav {
   font-weight: 500;
   display: block;
   padding: 24px 0;
+  transition: 250ms;
+  transition-property: color, fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-text-info:hover,
 .nav-text-info:focus {
   color: var(--blue);
 }
-.nav-info-link:hover,
-.nav-info-link:focus {
-  filter: invert(50%) sepia(14%) saturate(4026%) hue-rotate(175deg)
-    brightness(97%) contrast(96%);
-}
+
 .nav-text-info svg {
-  width: 16px;
-  height: 16px;
+  fill: currentColor;
   margin-right: 10px;
 }
 .top-container {
@@ -186,6 +187,10 @@ nav {
   cursor: pointer;
   font-family: "Roboto";
   font-weight: 700;
+  line-height: 30px;
+  transition: 250ms;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .top-container-button:hover {
   background-color: var(--dark-blue-hover);
@@ -245,31 +250,27 @@ nav {
   display: flex;
 }
 .wwd-container li {
-  flex-basis: calc(100% / 3 - 30px);
+  position: relative;
 }
 .wwd-container li:not(:last-child) {
   margin-right: 30px;
 }
-.wwd-text-box {
-  background: var(--wwd-text-color);
-  position: relative;
-  top: 50%;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70px;
-  top: -19%;
-}
+
 .wwd-text {
+  background: var(--wwd-text-color);
+  position: absolute;
+  bottom: 0%;
+  z-index: 2;
   color: var(--white);
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  width: 100%;
+  display: block;
+  padding: 27px 0;
 }
 .our-team-container {
   padding-top: 94px;
@@ -332,6 +333,9 @@ nav {
 .footer-address {
   color: var(--whitish);
   text-decoration: none;
+  transition: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-address:focus,
@@ -341,6 +345,9 @@ nav {
 .footer-email {
   color: var(--whitish);
   text-decoration: none;
+  transition: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-email:focus,
@@ -349,6 +356,9 @@ nav {
 }
 .footer-email-and-phone {
   color: var(--whitish);
+  transition: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-email-and-phone:focus,
@@ -395,6 +405,7 @@ nav {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  line-height: 26px;
 }
 .product-buttons-list {
   width: 1200px;
@@ -427,6 +438,9 @@ nav {
   margin-top: 30px;
   flex-basis: calc(100% / 3 - 30px);
   height: 404px;
+  transition: 250ms;
+  transition-property: background-color, box-shadow, color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -510,18 +524,22 @@ img {
 .circle {
   display: flex;
   justify-content: center;
-  background: var(--grayish);
+  background-color: var(--grayish);
   width: 44px;
   height: 44px;
   border-radius: 100%;
   padding: 12px 12px;
+  transition: 250ms;
+  transition-property: background-color, color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .footer-social-item:not(:last-child) {
   margin-right: 10px;
 }
 .circle:hover,
 .circle:focus {
-  background: var(--blue);
+  background-color: var(--blue);
   cursor: pointer;
 }
 .circle svg {
@@ -541,6 +559,9 @@ img {
   align-items: center;
   justify-content: center;
   color: var(--icon-gray);
+  transition: 250ms;
+  transition-property: background-color, color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-social-link:hover,
 .team-social-link:focus {
@@ -574,6 +595,7 @@ img {
   justify-content: center;
 }
 .modal {
+  position: relative;
   width: 528px;
   height: 581px;
   background: #ffffff;
@@ -621,6 +643,9 @@ img {
   align-items: center;
   justify-content: center;
   color: var(--icon-gray);
+  transition: 250ms;
+  transition-property: border-color, color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customer-logo:hover,
 .customer-logo:focus {
@@ -631,25 +656,26 @@ img {
   fill: currentColor;
 }
 .modal-button {
-  float: right;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
   background: var(--white);
   width: 30px;
   height: 30px;
   border-radius: 100%;
   border: 1px solid var(--button-gray);
-  margin-top: 8px;
-  margin-right: 8px;
+  transition: 250ms;
+  transition-property: border-color, color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-button:hover,
 .modal-button:focus {
-  background: var(--blue);
+  border: 1px solid var(--blue);
+  color: var(--blue);
   cursor: pointer;
 }
 .modal-button svg {
-  fill: var(--black);
+  fill: currentColor;
 }
 .project-card-overlay {
   position: relative;
@@ -673,11 +699,10 @@ img {
   height: 294px;
   font-size: 18px;
 }
-.project-card-overlay-text{
-font-style: normal;
-font-weight: 400;
-line-height: 28px;
-letter-spacing: 0.03em;
-color: var(--white);
-
+.project-card-overlay-text {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: var(--white);
 }
