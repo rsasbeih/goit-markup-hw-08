@@ -441,7 +441,6 @@ nav {
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc(100% / 3 - 30px);
-  height: 404px;
   transition: 250ms;
   transition-property: background-color, box-shadow, color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -481,6 +480,17 @@ button:active {
 
 .current {
   color: var(--blue);
+  position: relative;
+}
+.current::after {
+  content: "<hr>";
+  height: 2px;
+  border-radius: 100%;
+  background-color: var(--blue);
+  position: absolute;
+  top: 58px;
+  left: 4px;
+  overflow: hidden;
 }
 
 a {
@@ -714,25 +724,27 @@ img {
 }
 .project-img-container {
   position: relative;
+  overflow: hidden;
 }
 .project-img-overlay {
   background: var(--wwd-text-color);
   position: absolute;
   z-index: 2;
   color: var(--white);
-  font-weight: 700;
-  font-size: 0px;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 16px;
-  text-align: center;
+  padding: 63px 24px;
+  line-height: 28px;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   width: 100%;
   display: block;
-  height: 0px;
+  height: 100%;
+  top: 100%;
   background: var(--card-overlay-color);
-  transition: height 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: top 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project-card:hover .project-img-overlay {
-  height: 294px;
-  font-size: 18px;
+.project-card:hover .project-img-overlay,
+.project-card:focus .project-img-overlay {
+  top: 0%;
 }
