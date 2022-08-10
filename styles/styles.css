@@ -686,11 +686,12 @@ img {
   transition: 250ms;
   transition-property: border-color, color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--black);
+  padding-right: 23px;
 }
 .modal-button:hover,
 .modal-button:focus {
   border: 1px solid var(--blue);
-  color: var(--blue);
   cursor: pointer;
 }
 .modal-button svg {
