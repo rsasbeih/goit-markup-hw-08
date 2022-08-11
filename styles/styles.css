@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700&display=swap");
 
 :root {
   --blue: #2196f3;
@@ -410,6 +410,11 @@ nav {
   transition-property: background-color, color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.product-buttons:hover,
+.product-buttons:active {
+  background-color: var(--blue);
+  color: var(--white);
+}
 .product-buttons-list {
   width: 1200px;
   margin: 0 auto;
@@ -472,10 +477,9 @@ nav {
   transform: translateY(40%);
 }
 
-button:hover,
-button:active {
-  background-color: var(--blue);
-  color: var(--white);
+.modal-button:hover,
+.modal-button:active {
+  color: var(--blue);
 }
 
 .current {
@@ -483,14 +487,14 @@ button:active {
   position: relative;
 }
 .current::after {
-  content: "<hr>";
-  height: 2px;
-  border-radius: 100%;
+  content: "";
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
   background-color: var(--blue);
   position: absolute;
-  top: 58px;
-  left: 4px;
-  overflow: hidden;
+  left: 0;
+  bottom: -1px;
 }
 
 a {
@@ -606,8 +610,15 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 10;
+  visibility: visible;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: visibility, opacity, background-color, transform,;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0; 
+  /* transform: scale(1); */
 }
 .modal {
   position: relative;
@@ -617,13 +628,10 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .is-hidden {
   visibility: hidden;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
 }
 .customer-section {
   padding-top: 94px;
@@ -687,7 +695,9 @@ img {
   transition-property: border-color, color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--black);
-  padding-right: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .modal-button:hover,
 .modal-button:focus {
