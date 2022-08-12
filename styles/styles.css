@@ -772,10 +772,6 @@ img {
   border-color: var(--blue);
   color: var(--blue);
 }
-.service-input:hover svg,
-.service-input:focus-visible svg {
-  color: var(--blue);
-}
 
 label {
   display: flex;
@@ -888,10 +884,9 @@ textarea {
   left: 15px;
   fill: currentColor;
 }
-.input-icon:hover,
-.input-icon:focus {
-  color: var(--blue);
-}
 .input-container {
   position: relative;
+}
+.input-container:hover {
+  color: var(--blue);
 }
