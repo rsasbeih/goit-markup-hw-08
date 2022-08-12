@@ -877,6 +877,10 @@ textarea {
   width: 358px;
   margin-right: 12px;
 }
+.subscribe-input:hover,
+.subscribe-input:focus {
+  border-color: var(--blue);
+}
 .input-icon {
   position: absolute;
   top: 57%;
@@ -889,4 +893,16 @@ textarea {
 }
 .input-container:hover {
   color: var(--blue);
+}
+.service-input-textarea {
+  padding: 8px;
+  font-family: inherit;
+  font-size: inherit;
+  border: 1px solid var(--form-gray);
+  border-radius: 4px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  transition: 250ms;
+  transition-property: color, border-color, background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
