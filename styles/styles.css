@@ -17,6 +17,7 @@
   --button-gray: rgba(0, 0, 0, 0.1);
   --wwd-text-color: rgba(47, 48, 58, 0.8);
   --card-overlay-color: rgba(33, 150, 243, 0.9);
+  --form-gray: rgba(33, 33, 33, 0.2);
 }
 h1,
 h2,
@@ -615,12 +616,9 @@ img {
   z-index: 10;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 .modal {
   position: relative;
-  width: 528px;
-  height: 581px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -755,4 +753,85 @@ img {
 .project-card:hover .project-img-overlay,
 .project-card:focus .project-img-overlay {
   top: 0%;
+}
+input,
+textarea {
+  padding: 8px;
+  font-family: inherit;
+  font-size: inherit;
+  border: 1px solid var(--form-gray);
+  border-radius: 4px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+
+  color: var(--dark-gray);
+}
+
+textarea {
+  resize: none;
+}
+
+.form-container {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+.form-name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--blackish);
+  margin-bottom: 12px;
+}
+.label-check {
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 17px;
+}
+.label-check-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+
+  color: var(--dark-gray);
+}
+.form-button {
+  background-color: var(--blue);
+  padding: 10px 80px;
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 30px;
+  font-size: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  letter-spacing: 0.06em;
+  transition: 250ms;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-button-container {
+  text-align: center;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+input {
+  background: url(../images/icons.svg#Logo-1) no-repeat scroll 7px 7px;
+  padding-left: 30px;
 }
