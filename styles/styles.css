@@ -888,6 +888,10 @@ textarea {
   left: 15px;
   fill: currentColor;
 }
+.input-icon:hover,
+.input-icon:focus {
+  color: var(--blue);
+}
 .input-container {
   position: relative;
 }
