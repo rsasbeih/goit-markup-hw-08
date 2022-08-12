@@ -868,3 +868,13 @@ textarea {
   width: 358px;
   margin-right: 12px;
 }
+.input-icon {
+  position: absolute;
+  top: 57%;
+  transform: translateY(-50%);
+  left: 15px;
+  fill: currentColor;
+}
+.input-container {
+  position: relative;
+}
