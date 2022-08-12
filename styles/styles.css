@@ -762,6 +762,13 @@ img {
   border-radius: 4px;
   margin-top: 4px;
   margin-bottom: 10px;
+  text-indent: 30px;
+  transition: 250ms;
+  transition-property: color, border-color, background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.service-input:hover {
+  border-color: var(--blue);
 }
 
 label {
