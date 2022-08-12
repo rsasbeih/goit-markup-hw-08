@@ -767,8 +767,13 @@ img {
   transition-property: color, border-color, background-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.service-input:hover,.service-input:focus-visible {
+.service-input:hover,
+.service-input:focus-visible {
   border-color: var(--blue);
+  color: var(--blue);
+}
+.service-input:hover svg,
+.service-input:focus-visible svg {
   color: var(--blue);
 }
 
