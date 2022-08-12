@@ -856,6 +856,7 @@ textarea {
 
 .subscribe-button {
   background-color: var(--blue);
+  width: 200px;
   padding: 10px 40px;
   color: var(--white);
   border: none;
@@ -869,6 +870,14 @@ textarea {
   transition: 250ms;
   transition-property: background-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subscribe-button:hover,
+.subscribe-button:focus {
+  cursor: pointer;
+  background-color: var(--dark-blue-hover);
 }
 .subscribe-input {
   background-color: var(--dark-blue);
@@ -876,6 +885,10 @@ textarea {
   border-radius: 4px;
   width: 358px;
   margin-right: 12px;
+  padding-left: 10px;
+  transition: 250ms;
+  transition-property: border-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .subscribe-input:hover,
 .subscribe-input:focus {
@@ -905,4 +918,7 @@ textarea {
   transition: 250ms;
   transition-property: color, border-color, background-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-button svg {
+  fill: currentColor;
 }
