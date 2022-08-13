@@ -383,7 +383,9 @@
                 <p class="social-text">Subscribe to the newsletter</p>
                 <div>
                     <form class="subscribe-form">
+                        <label>
                         <input class="subscribe-input" type="email" name="email" placeholder="Email" />
+                        </label>
                         <div class="subscribe-button-container">
                             <button class="subscribe-button" type="submit">Subscribe    
                         <svg height="20px" width="20px">
@@ -403,54 +405,47 @@
                             <use href="./images/icons/icons.svg#close"></use>
                             </svg>
             </button>
-            <div class="form-container">
-                <form>
-                    <h2 class="form-name">Leave your information and we'll call you back</h2>
-                    <div class="input-container">
-                        <label>
-                         Name
+            <h2 class="form-name">Leave your information and we'll call you back</h2>
+            <form>
+                <label class="service-label">
+                         <span class="input-label">Name</span>
                           <input class="service-input" type="text" name="name" placeholder=" "/>
                           <svg class="input-icon" width="18" height="18">
                            <use href="./images/icons/icons.svg#person"></use>
                               </svg>
                     </label>
-                    </div>
-                    <div class="input-container">
-                        <label>
-                         Telephone
+                <label class="service-label">
+                         <span class="input-label">Telephone</span>
                           <input class="service-input" type="tel" name="telephone" placeholder=" "/>
                           <svg class="input-icon" width="18" height="18">
                            <use href="./images/icons/icons.svg#phone"></use>
                               </svg>
                     </label>
-                    </div>
-                    <div class="input-container">
-                        <label>
-                          Email
+                <label class="service-label">
+                          <span class="input-label">Email</span>
                          <input class="service-input" type="email" name="email" placeholder=" "/>
                           <svg class="input-icon" width="18" height="18">
                            <use href="./images/icons/icons.svg#email"></use>
                               </svg>
                      </label>
-                    </div>
-                    <div>
-                        <label>
-                          Comments
-                         <textarea  class="service-input-textarea" name="comments" rows="5" placeholder="Enter the text"></textarea>
+                <label class="service-label">
+                          <span class="input-label">Comments</span>
+                         <textarea  class="service-input-textarea" name="comments" rows="8" placeholder="Enter the text"></textarea>
                     </label>
-                    </div>
-                    <div>
-                        <label class="label-check">
-                         <input  class="service-input" type="checkbox" name="check" value="I agree with the newsletter and accept the Terms and Conditions"/>
+                <label class="label-check">
+                     <input type="hidden" name="terms" id="terms">
+                        <div class="checkbox-icon">
+                            <div class="unchecked-box"></div>
+                             <svg width="16" height="15">
+                            <use href="./images/icons/icons.svg#checkbox"></use>
+                            </svg>
+                            </div>
                        <span class="label-check-text">I agree with the newsletter and accept the Terms and Conditions</span>
                      </label>
-                    </div>
-                    <div class="form-button-container">
-                        <button class="form-button" type="submit">Send</button>
-                    </div>
-                </form>
-
-            </div>
+                <div class="form-button-container">
+                    <button class="form-button" type="submit">Send</button>
+                </div>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>

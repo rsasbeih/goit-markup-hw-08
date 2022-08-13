@@ -619,6 +619,7 @@ img {
 }
 .modal {
   position: relative;
+  padding: 40px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -755,14 +756,12 @@ img {
   top: 0%;
 }
 .service-input {
-  padding: 8px;
+  color: var(--black);
+  padding: 12px 40px;
   font-family: inherit;
   font-size: inherit;
   border: 1px solid var(--form-gray);
   border-radius: 4px;
-  margin-top: 4px;
-  margin-bottom: 10px;
-  text-indent: 30px;
   transition: 250ms;
   transition-property: color, border-color, background-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -770,13 +769,14 @@ img {
 .service-input:hover,
 .service-input:focus-visible {
   border-color: var(--blue);
-  color: var(--blue);
+  color: var(--black);
 }
 
-label {
+.service-label {
+  position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 8px;
+  margin-bottom: 30px;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -784,15 +784,13 @@ label {
 
   color: var(--dark-gray);
 }
+.input-label {
+  position: absolute;
+  top: -18px;
+}
 
 textarea {
   resize: none;
-}
-
-.form-container {
-  padding: 40px;
-  display: flex;
-  justify-content: center;
 }
 .form-name {
   font-weight: 700;
@@ -883,7 +881,8 @@ textarea {
   background-color: var(--dark-blue);
   border: 1px solid var(--subscribe-color);
   border-radius: 4px;
-  width: 358px;
+  width: 347px;
+  height: 50px;
   margin-right: 12px;
   padding-left: 10px;
   transition: 250ms;
@@ -892,11 +891,12 @@ textarea {
 }
 .subscribe-input:hover,
 .subscribe-input:focus {
-  border-color: var(--blue);
+  outline: none;
+  border-color: var(--white);
 }
 .input-icon {
   position: absolute;
-  top: 57%;
+  top: 50%;
   transform: translateY(-50%);
   left: 15px;
   fill: currentColor;
@@ -908,17 +908,30 @@ textarea {
   color: var(--blue);
 }
 .service-input-textarea {
-  padding: 8px;
+  padding: 10px;
   font-family: inherit;
   font-size: inherit;
   border: 1px solid var(--form-gray);
   border-radius: 4px;
-  margin-top: 4px;
-  margin-bottom: 10px;
   transition: 250ms;
   transition-property: color, border-color, background-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .subscribe-button svg {
   fill: currentColor;
+}
+.checkbox-icon {
+  margin-top: 5px;
+  margin-right: 8px;
+}
+
+.checkbox-icon svg {
+  display: none;
+}
+.unchecked-box {
+  display: block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--black);
+  border-radius: 2px;
 }
