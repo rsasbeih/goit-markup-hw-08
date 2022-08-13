@@ -940,3 +940,7 @@ textarea {
   border: 2px solid var(--black);
   border-radius: 2px;
 }
+
+label.service-label:hover .input-icon {
+  fill: var(--blue);
+}
