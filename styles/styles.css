@@ -935,25 +935,19 @@ textarea {
   margin-top: 5px;
   margin-right: 8px;
   fill: var(--white);
-  border-color: 1px solid var(--blackish);
+  border: 1px solid var(--blackish);
 }
-.checkbox-icon:hover, .checkbox-icon:focus{
+.checkbox-icon:hover,
+.checkbox-icon:focus {
   cursor: pointer;
 }
 .checkbox-icon:checked {
   fill: var(--blue);
-  border-color: 1px solid var(--blue);
+  border: 1px solid var(--blue);
 }
 
 .checkbox-icon svg {
   display: none;
-}
-.unchecked-box {
-  display: block;
-  width: 16px;
-  height: 15px;
-  border: 2px solid var(--black);
-  border-radius: 2px;
 }
 
 label.service-label:hover .input-icon,
@@ -975,6 +969,10 @@ label.service-label:focus .input-icon {
   transition: 250ms;
   transition-property: color, border-color, background-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.service-input-checkbox:checked .input-icon {
+  fill: var(--blue);
+  border: 1px solid var(--blue);
 }
 .service-form {
   display: flex;
