@@ -771,6 +771,10 @@ img {
   border-color: var(--blue);
   color: var(--black);
 }
+.service-input:hover svg,
+.service-input:focus-visible svg {
+  color: var(--blue);
+}
 
 .service-label {
   position: relative;
@@ -899,7 +903,7 @@ textarea {
   top: 50%;
   transform: translateY(-50%);
   left: 15px;
-  fill: currentColor;
+  fill: var(--black);
 }
 .input-container {
   position: relative;
