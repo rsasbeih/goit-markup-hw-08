@@ -406,7 +406,7 @@
                             </svg>
             </button>
             <h2 class="form-name">Leave your information and we'll call you back</h2>
-            <form>
+            <form class="service-form">
                 <label class="service-label">
                          <span class="input-label">Name</span>
                           <input class="service-input" type="text" name="name" placeholder=" "/>
@@ -433,12 +433,13 @@
                          <textarea  class="service-input-textarea" name="comments" rows="8" placeholder="Enter the text"></textarea>
                     </label>
                 <label class="label-check">
-                         <input  class="service-input-checkbox" type="checkbox" name="check" value="I agree with the newsletter and accept the Terms and Conditions"/>
+                         <input class="service-input-checkbox" type="hidden" name="check" value="I agree with the newsletter and accept the Terms and Conditions"/>
+                        <svg class="checkbox-icon" height="16px" width="16px">
+                            <use href="./images/icons/icons.svg#checkbox"></use>
+                            </svg>
                        <span class="label-check-text">I agree with the newsletter and accept the Terms and Conditions</span>
                      </label>
-                <div class="form-button-container">
-                    <button class="form-button" type="submit">Send</button>
-                </div>
+                <button class="form-button" type="submit">Send</button>
             </form>
         </div>
     </div>
