@@ -771,9 +771,10 @@ img {
   border-color: var(--blue);
   color: var(--black);
 }
-.service-input:hover svg,
-.service-input:focus-visible svg {
+.service-input:hover .input-icon,
+.service-input:focus-visible .input-icon {
   color: var(--blue);
+  fill: var(--blue);
 }
 
 .service-label {
