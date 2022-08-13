@@ -934,6 +934,15 @@ textarea {
 .checkbox-icon {
   margin-top: 5px;
   margin-right: 8px;
+  fill: var(--white);
+  border-color: 1px solid var(--blackish);
+}
+.checkbox-icon:hover, .checkbox-icon:focus{
+  cursor: pointer;
+}
+.checkbox-icon:checked {
+  fill: var(--blue);
+  border-color: 1px solid var(--blue);
 }
 
 .checkbox-icon svg {
