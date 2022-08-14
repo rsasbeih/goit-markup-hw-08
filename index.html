@@ -432,13 +432,16 @@
                           <span class="input-label">Comments</span>
                          <textarea  class="service-input-textarea" name="comments" rows="8" placeholder="Enter the text"></textarea>
                     </label>
-                <label class="label-check">
-                         <input class="service-input-checkbox" type="hidden" name="check" value="I agree with the newsletter and accept the Terms and Conditions"/>
-                        <svg class="checkbox-icon" height="16px" width="16px">
-                            <use href="./images/icons/icons.svg#checkbox"></use>
-                            </svg>
-                       <span class="label-check-text">I agree with the newsletter and accept the Terms and Conditions</span>
-                     </label>
+                <label class="agree-check">
+             <input type="checkbox" class="checkmark" name="agreement" value="agree" />
+            <svg class="icon" width="16" height="16">
+               <use href="./images/icons.svg#form-check"></use>
+                </svg>
+                <span>
+                I agree to the
+               <a href="#" class="terms">terms of some agreement</a>
+               </span>
+            </label>
                 <button class="form-button" type="submit">Send</button>
             </form>
         </div>
