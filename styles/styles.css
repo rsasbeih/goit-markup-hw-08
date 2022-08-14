@@ -931,24 +931,6 @@ textarea {
 .subscribe-button svg {
   fill: currentColor;
 }
-.checkbox-icon {
-  margin-top: 5px;
-  margin-right: 8px;
-  fill: var(--white);
-  border: 1px solid var(--blackish);
-}
-.checkbox-icon:hover,
-.checkbox-icon:focus {
-  cursor: pointer;
-}
-.checkbox-icon:checked {
-  fill: var(--blue);
-  border: 1px solid var(--blue);
-}
-
-.checkbox-icon svg {
-  display: none;
-}
 
 label.service-label:hover .input-icon,
 label.service-label:focus .input-icon {
@@ -959,21 +941,7 @@ label.service-label:focus .input-icon {
   outline: none !important;
   border-color: var(--blue);
 }
-.service-input-checkbox {
-  color: var(--black);
-  padding: 12px 12px;
-  font-family: inherit;
-  font-size: inherit;
-  border: 1px solid var(--form-gray);
-  border-radius: 4px;
-  transition: 250ms;
-  transition-property: color, border-color, background-color;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.service-input-checkbox:checked ~ .input-icon {
-  fill: var(--blue);
-  border: 1px solid var(--blue);
-}
+
 .service-form {
   display: flex;
   flex-direction: column;
@@ -999,10 +967,7 @@ label.service-label:focus .input-icon {
   fill: none;
   border: 2px solid #212121;
   border-radius: 2px;
-
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color,background-color,fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
 }
 
 .agree-check .checkmark:focus + .icon,
