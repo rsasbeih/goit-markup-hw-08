@@ -472,12 +472,6 @@ nav {
   background-color: var(--honey);
   height: 120px;
 }
-.icon {
-  display: block;
-  margin: auto;
-  top: 50%;
-  transform: translateY(40%);
-}
 
 .modal-button:hover,
 .modal-button:active {
@@ -838,7 +832,6 @@ textarea {
   transition: 250ms;
   transition-property: background-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  margin-top: 30px;
 }
 .form-button-container {
   text-align: center;
@@ -951,7 +944,7 @@ label.service-label:focus .input-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 34px;
+  margin-bottom: 15px;
 }
 
 .agree-check .checkmark {
@@ -992,5 +985,7 @@ label.service-label:focus .input-icon {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--dark-gray);
-  margin-top: 13px;
+}
+.text-area-label {
+  margin-bottom: 20px;
 }
