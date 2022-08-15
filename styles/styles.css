@@ -472,7 +472,6 @@ nav {
   background-color: var(--honey);
   height: 120px;
 }
-
 .modal-button:hover,
 .modal-button:active {
   color: var(--blue);
