@@ -983,6 +983,8 @@ label.service-label:focus .input-icon {
   border-color: #2196f3;
   fill: #ffffff;
   outline: none;
+  stroke: var(--white);
+  stroke-width: 0.2;
 }
 .service-text {
   font-weight: 400;
