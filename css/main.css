@@ -55,14 +55,14 @@ img {
   height: auto;
 }
 
-.section {
+.container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
 }
 
-.container {
+.section {
   padding: 94px 0;
 }
 
