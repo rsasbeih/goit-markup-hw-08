@@ -16,19 +16,17 @@
   text-align: center;
   margin: 0 0 50px 0;
 }
+
 .wwd__container {
   display: flex;
-}
-.wwd__container {
   li {
     position: relative;
   }
-}
-.wwd__container {
   li:not(:last-child) {
     margin-right: 30px;
   }
 }
+
 
 .wwd__text {
   background: $wwd-text-color;

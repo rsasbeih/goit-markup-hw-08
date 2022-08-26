@@ -1,5 +1,8 @@
 @import "../utils/vars.scss";
 
+.benefits {
+  display: flex;
+}
 .content {
   width: 270px;
   &:not(:last-child) {
