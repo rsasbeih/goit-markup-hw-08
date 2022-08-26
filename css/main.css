@@ -55,6 +55,10 @@ img {
   height: auto;
 }
 
+.section {
+  padding: 94px 0;
+}
+
 .container {
   width: 1200px;
   margin-left: auto;
@@ -62,8 +66,12 @@ img {
   padding: 0 15px;
 }
 
-.section {
-  padding: 94px 0;
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  text-align: center;
+  margin: 0 0 50px 0;
 }
 
 header {
@@ -218,14 +226,14 @@ header {
   display: flex;
 }
 
-.content {
+.benefits__item {
   width: 270px;
 }
-.content:not(:last-child) {
+.benefits__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.content__title {
+.benefits__title {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -236,15 +244,7 @@ header {
   text-transform: uppercase;
 }
 
-.content__text {
-  color: #757575;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  font-family: "Roboto";
-}
-
-.content__img {
+.benefits__image {
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
@@ -254,23 +254,12 @@ header {
   align-items: center;
   background-color: #f5f4fa;
 }
-.content__img svg {
+.benefits__image svg {
   width: 70px;
   height: 70px;
 }
 
-.content__title {
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  font-family: "Roboto";
-  font-style: normal;
-  text-transform: uppercase;
-}
-
-.content__text {
+.benefits__description {
   color: #757575;
   font-size: 14px;
   line-height: 24px;
@@ -290,6 +279,10 @@ header {
 }
 .content-container ul {
   display: flex;
+}
+
+.content__section {
+  padding-bottom: 0;
 }
 
 .wwd-section {
@@ -357,7 +350,7 @@ header {
   align-items: center;
 }
 
-.our-team__img {
+.our-team__image {
   margin-bottom: 30px;
 }
 
@@ -422,14 +415,6 @@ header {
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
-}
-
-.customer__title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 42px;
-  text-align: center;
-  margin: 0 0 50px 0;
 }
 
 .customer__container {
@@ -897,7 +882,7 @@ header {
   color: #ffffff;
 }
 
-.social__img {
+.social__image {
   display: flex;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
@@ -914,11 +899,11 @@ header {
   margin-right: 10px;
 }
 
-.social__img:hover, .social__img:focus {
+.social__image:hover, .social__image:focus {
   background-color: #2196f3;
   cursor: pointer;
 }
-.social__img svg {
+.social__image svg {
   fill: #ffffff;
 }
 

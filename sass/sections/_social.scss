@@ -24,7 +24,7 @@
   }
 }
 
-.social__img {
+.social__image {
   display: flex;
   justify-content: center;
   background-color: $social-img-background-color;
@@ -40,7 +40,7 @@
   margin-right: 10px;
 }
 
-.social__img {
+.social__image {
   &:hover,
   &:focus {
     background-color: $primary-color;
