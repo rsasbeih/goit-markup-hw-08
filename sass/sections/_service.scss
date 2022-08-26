@@ -1,0 +1,138 @@
+@import "../utils/vars.scss";
+@import "../utils/mixins.scss";
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service__input {
+  color: $form-text-color;
+  padding: 12px 40px;
+  font-family: inherit;
+  font-size: inherit;
+  @include bordered($form-gray);
+  border-radius: 4px;
+  transition: 250ms;
+  transition-property: color, border-color, background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus-visible {
+    outline: none !important;
+    border-color: $primary-color;
+    color: $form-text-color;
+  }
+  &:hover .service__icon,
+  &:focus-visible .service__icon {
+    outline: none !important;
+    color: $primary-color;
+    fill: $primary-color;
+  }
+}
+
+.service__label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  width: 100%;
+
+  color: $text-color;
+  &:hover .service__icon,
+  &:focus .service__icon {
+    fill: $primary-color;
+  }
+}
+.service__name {
+  position: absolute;
+  top: -18px;
+}
+.service__button {
+  background-color: $primary-color;
+  padding: 10px 80px;
+  color: $secondary-color;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 30px;
+  font-size: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  letter-spacing: 0.06em;
+  transition: 250ms;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: $button-hover-color;
+  }
+}
+
+.service__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+  fill: $form-text-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.service__textarea {
+  font-family: inherit;
+  font-size: inherit;
+  @include bordered($form-gray);
+  border-radius: 4px;
+  transition: 250ms;
+  transition-property: color, border-color, background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 12px 16px;
+  &:hover,
+  &:focus {
+    outline: none !important;
+    border-color: $primary-color;
+  }
+}
+
+.service__checkbox-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  & .service__checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  & .icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 7px;
+    fill: none;
+    border: 2px solid $secondary-text-color;
+    border-radius: 2px;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  & .service__checkbox:checked + .icon {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    fill: $secondary-color;
+    outline: none;
+    stroke: $secondary-color;
+    stroke-width: 0.2;
+  }
+}
+
+.service__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: $text-color;
+}
+.textarea {
+  margin-bottom: 20px;
+}

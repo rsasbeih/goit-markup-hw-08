@@ -1,0 +1,80 @@
+@import "../utils/vars.scss";
+
+.our-team {
+  display: flex;
+  justify-content: center;
+}
+
+.our-team {
+  .our-team__card:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.our-team__card {
+  background-color: $secondary-color;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0, 1, 1, rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.our-team__img {
+  margin-bottom: 30px;
+}
+.our-team__name {
+  text-align: center;
+  color: $secondary-text-color;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+}
+.our-team__title {
+  text-align: center;
+  color: $text-color;
+  margin: 0 0 16px 0;
+}
+.our-team__item:not(:last-child) {
+  margin-right: 10px;
+}
+.our-team__social {
+  display: flex;
+}
+
+.our-team__link {
+  text-decoration: none;
+  background-color: $secondary-color;
+  border-radius: 100%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $icon-gray;
+  transition: 250ms;
+  transition-property: background-color, color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $primary-color;
+    color: $secondary-color;
+  }
+}
+
+.our-team__link {
+  svg {
+    fill: currentColor;
+  }
+}
+.our-team__container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: $background-color;
+}
+.our-team__content {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}

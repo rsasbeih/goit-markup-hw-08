@@ -1,0 +1,115 @@
+@import "../utils/vars.scss";
+@import "../utils/mixins.scss";
+
+header {
+  @include bordered($accent-color-2);
+}
+.links {
+  display: flex;
+}
+.links {
+  li:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.links {
+  li {
+    a {
+      padding: 24px 0;
+      display: block;
+    }
+  }
+}
+.links__item {
+  color: $secondary-text-color;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $primary-color;
+  }
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-info {
+  display: flex;
+}
+.nav-info {
+  li:last-child {
+    margin-left: 30px;
+  }
+}
+.nav-info {
+  li {
+    a {
+      display: flex;
+    }
+  }
+}
+.nav-info {
+  li {
+    img {
+      margin-right: 10px;
+    }
+  }
+}
+.nav__logo {
+  color: $primary-color;
+  font-family: "Raleway";
+  font-size: 24px;
+  font-weight: 700;
+  margin-right: 100px;
+}
+.nav-info__text {
+  color: $text-color;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+  padding: 24px 0;
+  transition: 250ms;
+  transition-property: color, fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $primary-color;
+  }
+}
+
+.nav-info__text {
+  svg {
+    fill: currentColor;
+    margin-right: 10px;
+  }
+}
+.current {
+  color: $primary-color;
+  position: relative;
+}
+.current::after {
+  content: "";
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  background-color: $primary-color;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+}

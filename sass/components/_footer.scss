@@ -1,0 +1,64 @@
+@import "../utils/vars.scss";
+
+.footer {
+  background-color: $footer-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__list {
+  font-style: normal;
+  li:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+.footer__address {
+  color: $footer-text-color;
+  text-decoration: none;
+  transition: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    color: $secondary-color;
+  }
+}
+
+.footer__email {
+  color: $footer-text-color;
+  text-decoration: none;
+  transition: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    color: $secondary-color;
+  }
+}
+
+.footer__info {
+  color: $footer-text-color;
+  transition: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    color: $secondary-color;
+  }
+}
+
+.footer__content {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px;
+  display: flex;
+}
+.footer__logo {
+  color: $primary-color;
+  font-family: "Raleway";
+  font-size: 24px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 10px;
+}

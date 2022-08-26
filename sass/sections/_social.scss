@@ -1,0 +1,52 @@
+@import "../utils/vars.scss";
+
+.social__text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $secondary-color;
+  margin: 10px 0;
+  display: block;
+}
+.social-content {
+  margin-left: 70px;
+}
+
+.social__container {
+  display: flex;
+  justify-content: space-around;
+  img {
+    color: $secondary-color;
+  }
+}
+
+.social__img {
+  display: flex;
+  justify-content: center;
+  background-color: $social-img-background-color;
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  padding: 12px 12px;
+  transition: 250ms;
+  transition-property: background-color, color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social__img {
+  &:hover,
+  &:focus {
+    background-color: $primary-color;
+    cursor: pointer;
+  }
+  svg {
+    fill: $secondary-color;
+  }
+}

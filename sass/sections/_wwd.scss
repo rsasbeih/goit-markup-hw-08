@@ -1,0 +1,48 @@
+@import "../utils/vars.scss";
+
+.wwd-section {
+  padding-bottom: 94px;
+}
+.wwd-section__content {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+.wwd__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  text-align: center;
+  margin: 0 0 50px 0;
+}
+.wwd__container {
+  display: flex;
+}
+.wwd__container {
+  li {
+    position: relative;
+  }
+}
+.wwd__container {
+  li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.wwd__text {
+  background: $wwd-text-color;
+  position: absolute;
+  bottom: 0%;
+  z-index: 2;
+  color: $secondary-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  width: 100%;
+  display: block;
+  padding: 27px 0;
+}

@@ -1,0 +1,56 @@
+@import "../utils/vars.scss";
+@import "../utils/mixins.scss";
+.customer {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+.customer__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  text-align: center;
+  margin: 0 0 50px 0;
+}
+
+.customer__container {
+  display: flex;
+}
+.customer__container {
+  li {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+}
+.customer__container {
+  li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.customer__logo {
+  text-decoration: none;
+  background-color: $secondary-color;
+  @include bordered($icon-gray);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $icon-gray;
+  transition: 250ms;
+  transition-property: border-color, color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $primary-color;
+    border-color: $primary-color;
+  }
+  & svg {
+    fill: currentColor;
+  }
+}
+.customer-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
