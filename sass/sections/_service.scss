@@ -1,5 +1,6 @@
 @import "../utils/vars.scss";
 @import "../utils/mixins.scss";
+@import "../utils/breakpoints";
 .service {
   display: flex;
   flex-direction: column;
@@ -106,9 +107,7 @@
     appearance: none;
   }
   & .icon {
-    width: 16px;
-    height: 16px;
-    margin-right: 7px;
+    // margin-right: 7px;
     fill: none;
     border: 2px solid $secondary-text-color;
     border-radius: 2px;
@@ -133,6 +132,7 @@
   line-height: 24px;
   letter-spacing: 0.03em;
   color: $text-color;
+  margin-left: 7px;
 }
 .textarea {
   margin-bottom: 20px;

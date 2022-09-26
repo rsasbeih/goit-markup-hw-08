@@ -1,4 +1,5 @@
 @import "../utils/vars.scss";
+@import "../utils/breakpoints";
 
 .social__text {
   font-family: "Roboto";
@@ -9,11 +10,27 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $secondary-color;
-  margin: 10px 0;
+  margin-top: 48px;
+  margin-bottom: 20px;
   display: block;
+  @media screen and (min-width: $tablet) {
+    margin: 20px 0;
+  }
+  @media screen and (min-width: $desktop) {
+    margin: 10px 0;
+  }
 }
 .social-content {
-  margin-left: 70px;
+  margin-left: 0;
+  text-align: center;
+  @media screen and (min-width: $tablet) {
+    text-align: center;
+    margin-left: 0;
+  }
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+    margin-left: 70px;
+  }
 }
 
 .social__container {

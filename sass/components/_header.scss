@@ -1,11 +1,18 @@
 @import "../utils/vars.scss";
 @import "../utils/mixins.scss";
+@import "../utils/breakpoints";
 
 header {
   @include bordered($accent-color-2);
 }
 .links {
-  display: flex;
+  display: none;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 }
 .links {
   li:not(:last-child) {
@@ -39,37 +46,51 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
+  margin-left: 0;
+  margin-right: 0;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: $desktop) {
+    justify-content: space-between;
+    padding-left: 180px;
+    padding-right: 180px;
+  }
 }
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .nav-info {
-  display: flex;
-}
-.nav-info {
-  li:last-child {
-    margin-left: 30px;
-  }
-}
-.nav-info {
+  display: none;
   li {
     a {
       display: flex;
     }
   }
-}
-.nav-info {
-  li {
-    img {
-      margin-right: 10px;
+  li:last-child {
+    margin-left: 0;
+    @media screen and (min-width: $tablet) {
+      margin-left: 0;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-left: 30px;
     }
   }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+  }
 }
+
 .nav__logo {
   color: $primary-color;
   font-family: "Raleway";
@@ -83,13 +104,19 @@ header {
   font-size: 14px;
   font-weight: 500;
   display: block;
-  padding: 24px 0;
+  padding: 10px 0;
   transition: 250ms;
   transition-property: color, fill;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: $primary-color;
+  }
+  @media screen and (min-width: $tablet) {
+    padding: 10px 0;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 24px 0;
   }
 }
 

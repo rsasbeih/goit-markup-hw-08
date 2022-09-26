@@ -1,23 +1,45 @@
 @import "../utils/vars.scss";
 @import "../utils/mixins.scss";
-.customer {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 15px;
-}
 
 .customer__container {
   display: flex;
-}
-.customer__container {
-  li {
-    flex-basis: calc(100% / 3 - 30px);
+  flex-wrap: wrap;
+  justify-content: center;
+  // align-items: center;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-wrap: nowrap;
   }
 }
+
 .customer__container {
-  li:not(:last-child) {
+  li {
     margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  li:nth-last-child(-n + 3) {
+    margin-right: 30px;
+  }
+  @media screen and (min-width: $tablet) {
+    li:nth-child(-n + 3) {
+      margin-right: 30px;
+      margin-bottom: 30px;
+    }
+    li:nth-last-child(-n + 3) {
+      margin-right: 30px;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    li:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
   }
 }
 .customer__logo {
@@ -26,6 +48,7 @@
   @include bordered($icon-gray);
   border-radius: 4px;
   width: 170px;
+  height: 92px;
   height: 92px;
   display: flex;
   align-items: center;
@@ -41,6 +64,14 @@
   }
   & svg {
     fill: currentColor;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 170px;
+    height: 92px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 170px;
+    height: 92px;
   }
 }
 .customer-section {

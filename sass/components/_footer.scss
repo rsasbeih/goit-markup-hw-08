@@ -1,4 +1,5 @@
 @import "../utils/vars.scss";
+@import "../utils/breakpoints";
 
 .footer {
   background-color: $footer-color;
@@ -9,7 +10,13 @@
 .footer__list {
   font-style: normal;
   li:not(:last-child) {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 10px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 5px;
+    }
   }
 }
 .footer__address {
@@ -48,11 +55,20 @@
 }
 
 .footer__content {
-  width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 15px;
   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    text-align: center;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: center;
+  }
 }
 .footer__logo {
   color: $primary-color;

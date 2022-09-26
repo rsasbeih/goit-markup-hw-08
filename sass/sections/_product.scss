@@ -4,13 +4,21 @@
   padding: 94px 0;
 }
 .product-section__container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+  width: 350px;
+  @media screen and (min-width: $mobile) {
+    width: 402px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 1200px;
+  }
 }
 .products__list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   padding-bottom: 30px;
   & li:not(:last-child) {
     margin-right: 10px;
@@ -23,6 +31,7 @@
   font-weight: 500;
   font-size: 16px;
   padding: 6px 26px;
+  margin: 7px;
   border: none;
   border-radius: 4px;
   cursor: pointer;

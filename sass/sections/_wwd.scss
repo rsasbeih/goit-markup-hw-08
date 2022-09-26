@@ -1,13 +1,13 @@
 @import "../utils/vars.scss";
 
-.wwd-section {
-  padding-bottom: 94px;
-}
-.wwd-section__content {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 15px;
+.wwd_section {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
 }
 .wwd__title {
   font-size: 36px;
@@ -15,18 +15,32 @@
   line-height: 42px;
   text-align: center;
   margin: 0 0 50px 0;
+  visibility: hidden;
+  @media screen and (min-width: $tablet) {
+    visibility: visible;
+  }
+  @media screen and (min-width: $desktop) {
+    visibility: visible;
+  }
 }
 
 .wwd__container {
-  display: flex;
+  display: none;
   li {
     position: relative;
   }
   li:not(:last-child) {
     margin-right: 30px;
   }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: center;
+  }
 }
-
 
 .wwd__text {
   background: $wwd-text-color;
