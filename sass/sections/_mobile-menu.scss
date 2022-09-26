@@ -1,3 +1,4 @@
+@import "../utils/vars.scss";
 .mobile-menu-button {
   display: flex;
   justify-content: center;
@@ -23,7 +24,8 @@
 
 .burger-icon:hover,
 .burger-icon:focus {
-  fill: var(--accent-color);
+  fill: $primary-color;
+  cursor: pointer;
 }
 
 .mobile-menu {
@@ -32,7 +34,7 @@
   height: 100vh;
   top: 0;
   left: 0;
-  background-color: #ffffff;
+  background-color: $secondary-color;
   z-index: 100;
 
   opacity: 0;
@@ -71,15 +73,18 @@
     line-height: 0;
     border: none;
     background-color: transparent;
-
+    transition: 250ms;
+    transition-property: color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover .mobile-menu__close-icon,
     &:focus .mobile-menu__close-icon {
-      fill: var(--accent-color);
+      fill: $primary-color;
+      cursor: pointer;
     }
   }
 
   &__close-icon {
-    fill: #212121;
+    fill: $secondary-text-color;
   }
 
   &__item {
@@ -92,10 +97,14 @@
     line-height: 1.77;
     letter-spacing: 0.02em;
 
-    color: var(--second-color);
+    color: $secondary-text-color;
+    transition: 250ms;
+    transition-property: color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-      color: var(--accent-color);
+      color: $primary-color;
+      cursor: pointer;
     }
   }
 
@@ -112,7 +121,15 @@
     font-size: 34px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    color: var(--accent-color);
+    color: $secondary-text-color;
+    transition: 250ms;
+    transition-property: color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: $primary-color;
+      cursor: pointer;
+    }
   }
 
   &__email-link {
@@ -121,7 +138,15 @@
     line-height: 1.16;
     letter-spacing: 0.02em;
 
-    color: #757575;
+    color: $text-color;
+    transition: 250ms;
+    transition-property: color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: $secondary-text-color;
+      cursor: pointer;
+    }
   }
   &__social-list {
     display: flex;
@@ -136,7 +161,15 @@
     line-height: 1.22;
     letter-spacing: 0.02em;
 
-    color: var(--accent-color);
+    color: $primary-color;
+    transition: 250ms;
+    transition-property: color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: $button-hover-color;
+      cursor: pointer;
+    }
   }
 
   &__social-item {

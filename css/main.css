@@ -266,7 +266,8 @@ header {
 
 .burger-icon:hover,
 .burger-icon:focus {
-  fill: var(--accent-color);
+  fill: #2196f3;
+  cursor: pointer;
 }
 
 .mobile-menu {
@@ -307,9 +308,13 @@ header {
   line-height: 0;
   border: none;
   background-color: transparent;
+  transition: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-menu__close-button:hover .mobile-menu__close-icon, .mobile-menu__close-button:focus .mobile-menu__close-icon {
-  fill: var(--accent-color);
+  fill: #2196f3;
+  cursor: pointer;
 }
 .mobile-menu__close-icon {
   fill: #212121;
@@ -322,10 +327,14 @@ header {
   font-size: 40px;
   line-height: 1.77;
   letter-spacing: 0.02em;
-  color: var(--second-color);
+  color: #212121;
+  transition: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-menu__link:hover, .mobile-menu__link:focus {
-  color: var(--accent-color);
+  color: #2196f3;
+  cursor: pointer;
 }
 .mobile-menu__contact-list {
   margin-bottom: 64px;
@@ -338,7 +347,14 @@ header {
   font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  color: var(--accent-color);
+  color: #212121;
+  transition: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu__phone-link:hover, .mobile-menu__phone-link:focus {
+  color: #2196f3;
+  cursor: pointer;
 }
 .mobile-menu__email-link {
   font-weight: 500;
@@ -346,6 +362,13 @@ header {
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: #757575;
+  transition: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu__email-link:hover, .mobile-menu__email-link:focus {
+  color: #212121;
+  cursor: pointer;
 }
 .mobile-menu__social-list {
   display: flex;
@@ -356,7 +379,14 @@ header {
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  color: var(--accent-color);
+  color: #2196f3;
+  transition: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu__social-link:hover, .mobile-menu__social-link:focus {
+  color: #188ce8;
+  cursor: pointer;
 }
 .mobile-menu__social-item {
   display: flex;
