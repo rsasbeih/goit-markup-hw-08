@@ -43,6 +43,62 @@
                     </a>
                 </li>
             </ul>
+            <button type="button" class="mobile-menu-button" data-menu-open>
+          <svg class="burger-icon" width="24" height="16">
+            <use  href="./images/icons/icons.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
+        </div>
+        <div class="mobile-menu" data-menu>
+            <div class="mobile-menu__container container">
+                <button class="mobile-menu__close-button" type="button" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="18px" height="18px">
+              <use href="./images/icons/icons.svg#icon-mobile-close"></use>
+            </svg>
+          </button>
+                <nav class="mobile-menu__navigation">
+                    <ul class="mobile-menu__list list">
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__link link" href="./index.html">Studio</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__link link" href="./portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__link link" href="">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="mobile-menu__contact">
+                    <ul class="mobile-menu__contact-list list">
+                        <li class="mobile-menu__contact-item">
+                            <a class="mobile-menu__phone-link link" href="tel:+380961111111">
+                  +38 096 111 11 11</a>
+                        </li>
+                        <li class="mobile-menu__contact-item">
+                            <a class="mobile-menu__email-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+
+                    <div class="mobile-menu__social">
+                        <ul class="mobile-menu__social-list list">
+                            <li class="mobile-menu__social-item">
+                                <a class="mobile-menu__social-link link" href="">Instagram</a>
+                            </li>
+                            <li class="mobile-menu__social-item">
+                                <a class="mobile-menu__social-link link" href="">Twitter</a>
+                            </li>
+                            <li class="mobile-menu__social-item">
+                                <a class="mobile-menu__social-link link" href="">Facebook</a>
+                            </li>
+                            <li class="mobile-menu__social-item">
+                                <a class="mobile-menu__social-link link" href="">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -445,13 +501,8 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="js/mobile-menu.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
