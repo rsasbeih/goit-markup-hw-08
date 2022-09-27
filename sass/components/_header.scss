@@ -23,7 +23,7 @@ header {
 .links {
   li {
     a {
-      padding: 24px 0;
+      padding: 32px 0;
       display: block;
     }
   }
@@ -48,14 +48,17 @@ header {
   align-items: center;
   margin-left: 0;
   margin-right: 0;
+  height: 60px;
   @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
+    height: auto;
   }
   @media screen and (min-width: $desktop) {
     justify-content: space-between;
-    padding-left: 180px;
-    padding-right: 180px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: auto;
   }
 }
 .nav {

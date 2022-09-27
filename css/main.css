@@ -55,8 +55,15 @@ img {
   height: auto;
 }
 
-.section {
-  padding: 94px 0;
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
 }
 
 .container {
@@ -111,7 +118,7 @@ header {
 }
 
 .links li a {
-  padding: 24px 0;
+  padding: 32px 0;
   display: block;
 }
 
@@ -134,18 +141,21 @@ header {
   align-items: center;
   margin-left: 0;
   margin-right: 0;
+  height: 60px;
 }
 @media screen and (min-width: 768px) {
   .nav-container {
     display: flex;
     justify-content: space-between;
+    height: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .nav-container {
     justify-content: space-between;
-    padding-left: 180px;
-    padding-right: 180px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: auto;
   }
 }
 
@@ -418,10 +428,20 @@ header {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 24px;
   line-height: 60px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 44px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+  }
 }
 
 .hero__button {
@@ -466,7 +486,7 @@ header {
   .benefits__item {
     width: 336px;
   }
-  .benefits__item {
+  .benefits__item:not(:last-child) {
     margin-right: 30px;
   }
 }

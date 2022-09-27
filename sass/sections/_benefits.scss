@@ -18,7 +18,7 @@
   width: 100%;
   @media screen and (min-width: $tablet) {
     width: 336px;
-    & {
+    &:not(:last-child) {
       margin-right: 30px;
     }
   }
