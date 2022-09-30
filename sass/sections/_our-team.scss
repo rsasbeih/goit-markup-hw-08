@@ -18,21 +18,17 @@
   img {
     width: 100%;
   }
-  @media screen and (min-width: $tablet) {
-    .our-team__card {
-      margin-right: 30px;
+  margin-top: -30px;
+  margin-left: -30px;
+  .our-team__card {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc(100% - 30px);
+    @media screen and (min-width: $tablet) {
+      flex-basis: calc(100% / 2 - 30px);
     }
-    img {
-      width: 270px;
-    }
-  }
-  @media screen and (min-width: $desktop) {
-    .our-team__card:not(:last-child) {
-      margin-right: 30px;
-    }
-
-    img {
-      width: 270px;
+    @media screen and (min-width: $desktop) {
+      flex-basis: calc(100% / 4 - 30px);
     }
   }
 }

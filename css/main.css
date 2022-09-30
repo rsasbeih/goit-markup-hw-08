@@ -55,6 +55,9 @@ img {
   height: auto;
 }
 
+.section {
+  padding: 15px 0;
+}
 @media screen and (min-width: 768px) {
   .section {
     padding: 60px 0;
@@ -73,17 +76,17 @@ img {
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 100%;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 100%;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 100%;
+    width: 1200px;
   }
 }
 
@@ -137,11 +140,10 @@ header {
 
 .nav-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-left: 0;
-  margin-right: 0;
-  height: 60px;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 @media screen and (min-width: 768px) {
   .nav-container {
@@ -463,39 +465,25 @@ header {
 }
 
 .benefits {
-  display: block;
-}
-@media screen and (min-width: 768px) {
-  .benefits {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .benefits {
-    display: flex;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-gap: 30px;
 }
 
-.benefits__item {
-  width: 100%;
+@media screen and (min-width: 1200px) {
+  .benefits__item {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .benefits__item {
-    width: 336px;
-  }
-  .benefits__item:not(:last-child) {
-    margin-right: 30px;
+    width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
   .benefits__item {
     width: 270px;
-  }
-  .benefits__item:not(:last-child) {
-    margin-right: 30px;
   }
 }
 
@@ -522,17 +510,33 @@ header {
 }
 
 .benefits__image {
-  margin-bottom: 30px;
-  height: 120px;
-  border-radius: 4px;
   display: flex;
-  justify-content: space-around;
+  height: 120px;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 30px;
   background-color: #f5f4fa;
 }
-.benefits__image svg {
-  height: 70px;
+@media screen and (min-width: 480px) {
+  .benefits__image {
+    width: 450px;
+  }
 }
+@media screen and (min-width: 768px) {
+  .benefits__image {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__image {
+    width: 270px;
+  }
+}
+.benefits__image svg {
+  align-items: center;
+}
+
 .benefits__description {
   color: #757575;
   font-size: 14px;
@@ -542,6 +546,7 @@ header {
 }
 
 .wwd_section {
+  padding-top: 0;
   display: none;
 }
 @media screen and (min-width: 768px) {
@@ -631,23 +636,26 @@ header {
   }
 }
 
+.our-team {
+  margin-top: -30px;
+  margin-left: -30px;
+}
 .our-team img {
   width: 100%;
 }
+.our-team .our-team__card {
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc(100% - 30px);
+}
 @media screen and (min-width: 768px) {
   .our-team .our-team__card {
-    margin-right: 30px;
-  }
-  .our-team img {
-    width: 270px;
+    flex-basis: calc(50% - 30px);
   }
 }
 @media screen and (min-width: 1200px) {
-  .our-team .our-team__card:not(:last-child) {
-    margin-right: 30px;
-  }
-  .our-team img {
-    width: 270px;
+  .our-team .our-team__card {
+    flex-basis: calc(25% - 30px);
   }
 }
 
@@ -726,40 +734,24 @@ header {
   flex-wrap: wrap;
   justify-content: center;
 }
-@media screen and (min-width: 768px) {
-  .customer__container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .customer__container {
-    display: flex;
-    flex-wrap: nowrap;
-  }
-}
 
-.customer__container li {
-  margin-right: 30px;
-  margin-bottom: 30px;
+.customer__container {
+  margin-top: -30px;
+  margin-left: -20px;
 }
-.customer__container li:nth-last-child(-n+3) {
-  margin-right: 30px;
+.customer__container li {
+  margin-top: 20px;
+  margin-left: 20px;
+  flex-basis: calc(50% - 30px);
 }
 @media screen and (min-width: 768px) {
-  .customer__container li:nth-child(-n+3) {
-    margin-right: 30px;
-    margin-bottom: 30px;
-  }
-  .customer__container li:nth-last-child(-n+3) {
-    margin-right: 30px;
+  .customer__container li {
+    flex-basis: calc(33.3333333333% - 30px);
   }
 }
 @media screen and (min-width: 1200px) {
-  .customer__container li:not(:last-child) {
-    margin-right: 30px;
-    margin-bottom: 0;
+  .customer__container li {
+    flex-basis: calc(16.6666666667% - 30px);
   }
 }
 
@@ -768,7 +760,7 @@ header {
   background-color: #ffffff;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 170px;
+  width: 100%;
   height: 92px;
   height: 92px;
   display: flex;
@@ -788,14 +780,12 @@ header {
 }
 @media screen and (min-width: 768px) {
   .customer__logo {
-    width: 170px;
-    height: 92px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
   .customer__logo {
-    width: 170px;
-    height: 92px;
+    width: 100%;
   }
 }
 

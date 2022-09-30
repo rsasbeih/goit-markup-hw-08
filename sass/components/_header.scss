@@ -44,11 +44,10 @@ header {
 
 .nav-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-left: 0;
-  margin-right: 0;
-  height: 60px;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
   @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: space-between;

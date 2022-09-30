@@ -1,6 +1,7 @@
 @import "../utils/vars.scss";
 
 .wwd_section {
+  padding-top: 0;
   display: none;
   @media screen and (min-width: $tablet) {
     display: none;
